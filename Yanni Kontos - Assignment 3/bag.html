@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=description content="Minotaur Entertainment" >
+    <meta name=author content="Yanni Kontos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minotaur</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/bag.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header id=navbar class="navbar">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidemenu">
+                <a id=menu-head href="index.html" style="font-weight: 500">minotaur</a>
+                <a href="catalogue.html">magazines</a>
+                <a href="catalogue.html">music</a>
+                <a href="catalogue.html">board games</a>
+                <a href="catalogue.html">movies</a>
+                <a href="catalogue.html">tv</a>
+                <a href="catalogue.html">manga / anime</a>
+            </div>
+          </div>
+        <nav id="headernav-2" class="headernav-2">
+            <ul>
+                <div class="menuhover">
+                    <span onclick="openNav()">
+                        <ai><a ><img class="menuico" src="icons/bar-menu.png"><alt=""></a></li>
+                    </span>      
+                </div>               
+            </ul>
+        </nav>
+    </header>
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="">
+    </div>
+    <main>
+        <!-- background bag image -->        
+        <div class="back-span" style="padding: 0 0 0 100px;margin-top:50px;">
+        </div>
+        <span class="bag-card">
+            <div class="bag-title">
+                <h1 style="text-align: center;">shopping bag</h1>
+            </div>
+        </span>
+        <!-- bag table -->
+        <section id="bag" class="bag-wrap">
+            <table width="100%">
+                <thead>
+                    <tr>
+                         <td>Product</td>
+                         <td></td>
+                         <td>Price</td>
+                         <td>Quantity</td>
+                         <td style="text-align: right;">Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="product.html"><img src="images/Product-ticket-to-ride.png" alt=""></a></td>
+                        <td>
+                            <h3 style="margin-bottom: -10px; margin-top: 0px; color:black; font-family: Poppins, sans-serif;">Ticket to Ride</h3>
+                            <br>Type : Family Games
+                            <br>2 - 5 Players<br><br>
+                            <a class=remove href="">Remove</a>
+                        </td>
+                        <td style="font-size: 1.5em;font-weight: 300;">$50.00</td>
+                        <td>
+                            <button onclick="dec('amount')">-</button>
+                            <input name="amount" type="number" value="2">
+                            <button onclick="inc('amount')">+</button> 
+                        </td>
+                        <td style="font-size: 1.5em;font-weight: 300;">$100.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="total">
+            <div class="total-left">
+                <p class="total-price-2">total $100.00</p>
+                <div class="bag-button">
+                    <a href="product.html" class="continue-shopping">continue shopping</a>
+                </div>
+            </div>
+            <div class="total-right">
+                <p class="total-price">total $100.00</p>
+                <div class="bag-button">
+                    <a href="checkout1.html" class="bag-checkout">proceed to checkout</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <a href=index.html style="text-decoration:none">
+              <h4>minotaur</h4>
+            </a>
+        </section>
+    </footer>
+<script src="scripts/bag.js"></script>
+<script src="scripts/navbar.js"></script>
+</body>
+
+</html>

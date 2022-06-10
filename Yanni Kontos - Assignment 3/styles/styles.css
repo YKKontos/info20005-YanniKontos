@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@font-face{  
+  font-family: "Runalto";
+  src: url(/fonts/Runalto.otf) format("opentype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+:root{
+    background-color: rgb(255, 255, 255); 
+    border: none;   
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-family: 'Poppins', serif;
+    color: #e7e7e7;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-weight: 100;
+}
+
+h3{
+    color: white;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 60%;
+    transition: color .3s;
+}
+
+h4:hover{
+    cursor: pointer;
+    color: #8c00ff;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+}
+
+h6{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h7{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px
+}
+
+h8{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    width: 200px;
+    height: 200px;
+    display: flex
+}
+
+h9{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    width: 100px;
+}
+
+s1{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em
+}
+
+.logo-minotaur{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+    justify-content: left;
+    transition: color .3s;
+    margin-top: -82px;
+}
+
+.logo-minotaur a{
+    font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      padding: 8px 8px 30px 50px; 
+      text-decoration: none;
+      font-size: 16px;
+      color: #000000;
+      display: block;
+      transition: 0.3s;
+}
+.logo-minotaur a:hover{
+    color: #8c00ff;
+}
+
+.pr-background{
+    background-image: url('../images/Home-1.png');
+    min-height: 100vh;
+    margin-top: -100px;
+    background-attachment: fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.description{
+    color: #ffffff;
+    margin-top: 1px;
+    padding: 30px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    min-height: 80px;
+}
+  
+.featuredbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.confirmation-bg{
+    width: 110%;
+    margin-top: -600px;
+    max-height: 140vh;
+    object-position: center;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+.confirmationwidth{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.confirmtext{
+    text-align: center;
+    margin-top: -250px;
+    width: 85%;
+    background-color: #141414;
+    z-index: 10;
+    height: 70vh;
+    vertical-align: top;
+}
+
+.confirmcard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -100px;
+}
+
+.continue-shopping{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #C7AC68;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    justify-content: center;
+    transition: color .3s;
+}
+
+.continue-shopping:hover{
+    color: #ffffff;
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.back-text{
+    vertical-align: bottom;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #C7AC68;
+    letter-spacing: 2px;
+}
+
+.back-span{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.back{
+    border: solid #C7AC68;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.back:hover ,.back-text:hover{
+    border-color: rgb(255, 0, 0);
+    color: white;
+}
+
+@media screen and (max-width: 2000px){
+        .confirmation-bg{
+            width: 110%;
+            margin-top: -600px;
+            max-height: 140vh;
+            object-position: center;
+            object-fit: cover;
+            overflow-x: hidden;
+        }
+        .confirmtext{
+            margin-top: -600px;
+            padding-left: 20px;
+            padding-right: 30px;    
+        }
+}
+
+@media screen and (max-width: 1300px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -600px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    .confirmtext{
+        text-align: center;
+        margin-top: -250px;
+        width: 85%;
+        background-color: #141414;
+        z-index: 10;
+        height: 70vh;
+        vertical-align: top;
+    }
+}
+  
+@media screen and (max-width: 1100px){
+    .description{
+        font-size: 1.1em; 
+        min-height: 110px;
+    }
+    .card button{
+        width: 70%;
+        font-size: 1.1em;   
+    }
+}
+  
+@media screen and (max-width: 1000px){
+    .description{
+        font-size: 1.1em;     
+        min-height: 110px;
+    }
+    .card button{
+        width: 70%;
+        font-size: 1.1em;        
+    }
+    .cards{
+        display: grid;
+        justify-content: center;
+        grid-gap: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0;
+    }
+}
+ 
+@media screen and (max-width: 767px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -400px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }  
+    .confirmationwidth{
+        width: 100%;
+        overflow-x: hidden;  
+    }
+    .cards{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);   
+        grid-auto-rows: auto;      
+    }
+    .description{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 1.8em; 
+        min-height: 110px;
+    }
+    .card button{
+        width: 70%;
+        font-size: 3em; 
+    }  
+}
+
+@media screen and (max-width: 580px){
+    .cards{
+        display: grid;
+        justify-content: center;
+        grid-gap: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);   
+        grid-auto-rows: auto;  
+    }
+    h2{
+        padding-top: 20px;
+        font-size: 2em;
+    }
+    .description{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 1.5em;
+        min-height: 110px;
+    }
+    .card button{
+        width: 70%;
+        font-size: 1.9em; 
+    }  
+}
+
+@media screen and (max-width: 600px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -200px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    .confirmtext{
+        margin-top: -260px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+@media screen and (max-width: 420px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -100px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    .confirmtext{
+        margin-top: -250px;
+        padding-left: 20px;
+        padding-right: 30px; 
+    }
+}  
+}
+@media screen and (max-width: 420px){
+    .cards{
+        display: grid;
+        justify-content: center;
+        grid-gap: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);   
+        grid-auto-rows: auto;  
+    }
+    h2{
+        padding-top: 20px;
+        font-size: 1.8em;
+    }
+    .description{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 1.1em; 
+        min-height: 100px;
+    }
+    .card button{
+        width: 80%;
+        font-size: 1.9em; 
+    }  
+}

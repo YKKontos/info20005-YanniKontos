@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=description content="Minotaur Entertainment">
+    <meta name=author content="Yanni Kontos>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minotaur</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="./styles/bag.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header id=navbar class="navbar">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidemenu">
+                <a id=menu-head href="index.html" style="font-weight: 500">minotaur</a>
+                <a href="catalogue.html">magazines</a>
+                <a href="catalogue.html">music</a>
+                <a href="catalogue.html">board games</a>
+                <a href="catalogue.html">movies</a>
+                <a href="catalogue.html">tv</a>
+                <a href="catalogue.html">manga / anime</a>
+            </div>
+          </div>
+        <nav id="headernav-2" class="headernav-2">
+            <ul>
+                <div class="menuhover">
+                    <span onclick="openNav()">
+                        <ai><a ><img class="menuico" src="icons/bar-menu.png"><alt=""></a></li>
+                    </span>      
+                </div> 
+                <div class="search-2" >
+                    <li><button onclick="toggleSearch()"><img src="icons/search.png" alt=""></button></li>  
+                </div>   
+                <div class="profile-2">
+                    <li><a href=""><img src="icons/profile.png" alt=""></a></li>
+                </div> 
+                <div class="shopping-bag-2">             
+                    <li><a href="bag.html"><img src="icons/shopping-bag.png"alt=""></a></li>
+                </div>      
+            </ul>
+        </nav>
+    </header>
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="">
+    </div>
+    <div id="bagslide" class="bagslide">
+        <h1 style="text-align: center;font-size: 3em;">bag</h1>
+      </div>
+    <main>
+        <div class="product-layout">
+            <div class="product-left">
+                <p class="product-title">Ticket to Ride</p>
+                <h6>October 2, 1900 - it's 28 years to the day that noted London eccentric, Phileas Fogg accepted and then won a bet that he could travel "Around the World in 80 Days." Now, at the dawn of the century, some old friends have gathered to celebrate Fogg's impetuous and lucrative gamble - and to propose a new wager of their own. The stakes: $1 million in a winner-takes-all competition. The objective: to see the most cities in North America - in just 7 days.
+                    <br> <br>Ticket to Ride is a cross-country train adventure game where players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn. Additional points come to those who can fulfill their Destination Tickets by connecting two distant cities, and to the player who builds the longest continuous railway.
+                </h6>
+            </div>
+            <div class="product-right">
+                <img src="images/Product-ticket-to-ride.png" alt="">
+                <div class = "vertical"></div>
+                <div class="product-button">
+                    <a id=baglink onclick="" href="bag.html" class="product-add">add to your bag - $50</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+        <div class="product-layout-2">
+            <div class="product-left-2">
+                <p class="product-title-2">Try Brass Lancashire</p>
+                <h9>Brass: Lancashire - first published as Brass - is an economic strategy game that tells the story of competing cotton entrepreneurs in Lancashire during the industrial revolution. You must develop, build, and establish your industries and network so that you can capitalise demand for iron, coal and cotton.
+                </h9>
+            </div>
+            <div class="product-right-2">
+                <img src="images/Brass-lancashire.png" alt="">
+                <div class = "vertical-2"></div>
+            </div>
+        </div>
+        </div>    
+    <footer>
+        <section class="footer">
+            <a href=index.html style="text-decoration:none">
+              <h4>minotaur</h4>
+            </a>
+        </section>
+    </footer>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/quantity-drop.js"></script>
+<script src="scripts/collapsible.js"></script>
+<script src="scripts/bag.js"></script>
+</body>
+
+</html>

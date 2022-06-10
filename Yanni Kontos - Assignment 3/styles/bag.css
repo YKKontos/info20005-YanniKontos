@@ -1,0 +1,415 @@
+:root{
+    background-color: #111111;
+}
+
+.bag-bg{
+    position: sticky;
+    top: 20px; 
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;  
+}
+
+.bag-title{
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: -50px;
+    background-color: #b9b9b9;
+    vertical-align: middle;
+    padding-top: 19px;
+    padding-bottom: 1px;
+}
+
+.bag-wrap{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#bag table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#bag table img{
+    width: 180px;
+    margin-bottom:90px;
+}
+
+#bag table td:nth-child(1){
+    width: 170px;
+    text-align: left;
+    padding-top: 50px;
+}
+
+#bag table td:nth-child(2){
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    padding: 50px;
+}
+
+#bag table td:nth-child(3){
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+#bag table thead td:nth-child(4){
+    width: 100%;
+    padding-right: 90px;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+#bag table td:nth-child(4){
+    width: 100%;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+#bag table td:nth-child(4) input{
+    width: 40px;
+    padding: 20px 5px 20px 5px;
+    border-radius: 0 ;
+    border: 1px solid #ffffff;;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#bag table td:nth-child(4) button{
+    width: 30px;
+    justify-content: center;
+    padding: 20px 5px 20px 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 1px solid  #adadad;
+    border-radius: 0 ;
+    background-color: #adadad;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: background-color .3s;
+}
+
+#bag table td:nth-child(4) button:hover{
+    background-color: #8c00ff;
+    color: #ffffff;
+    border: 1px solid #8c00ff;
+    font-size: 1.2em;
+}
+
+#bag table td:nth-child(4) input:focus{
+    outline: none;
+}
+
+#bag table td:nth-child(4) input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#bag table td:nth-child(5){
+    width: 100%;
+    text-align: right;
+    padding-top: 50px;
+    vertical-align: top;
+}
+
+#bag table thead td{
+    color: white;
+    font-weight:300;
+    font-size:1em;
+    padding:18px 0;
+}
+
+#bag table tbody tr td:nth-child(4){
+    padding-right: 53px; 
+}
+
+.remove{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #adadad;
+    margin-top: 90px;
+    transition: color .3s;
+}
+
+.remove:hover{
+    color: #8c00ff;
+}
+
+.total{
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    background-color: #adadad;
+}
+
+.bag-button{
+    display: flex;
+    justify-content: right;
+}
+
+.bag-checkout{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    background-color: #000000;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: background-color .3s;
+}
+
+.bag-checkout:hover{
+    color: rgb(255, 255, 255);
+    background-color: #8c00ff;
+    border: 2px solid #8c00ff
+}
+
+.continue-shopping{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: background-color .3s;
+}
+
+.continue-shopping:hover{
+    color: rgb(255, 255, 255);
+    background-color: #8c00ff;
+    border: 2px solid #8c00ff
+}
+
+.total-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.total-caption{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: rgb(138, 138, 138);
+}
+.total-price{
+    display: flex;
+    justify-content: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    color: #000000;;
+    margin-bottom: 40px;
+}
+
+.total-price-2{
+    display: flex;
+    justify-content: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    color: #adadad;;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1500px){
+    .bag-wrap{
+        padding-left: 60px;
+        padding-right: 60px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1em;
+    }
+    #bag table td:nth-child(3){
+        width: 100%;
+        text-align: right;
+        vertical-align: top;
+        padding-top: 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px){
+    .bag-title{
+        text-align: center;
+        margin-top: -70px;
+        margin-bottom: -50px;
+        font-size: 0.1em;   
+    }
+    .bag-button{
+        display: flex;
+        justify-content: center;
+    }
+    .bag-checkout{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        color: rgb(0, 0, 0);
+        font-size: 1.1em;
+        background-color: #C7AC68;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 20px;
+        margin-bottom: 12px;
+        transition: background-color .3s;
+    }
+    .bag-small-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .bag-small-grid-right{
+        margin-left: -70px;
+    }
+    .quantity-input{
+        width: 40px;
+        padding: 20px 5px 20px 5px;
+        border-radius: 0 ;
+        border: 1px solid #c7ac68;;
+        background-color: rgb(19, 19, 19);
+        color: #c7ac68;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .quantity-button{
+        width: 35px;
+        justify-content: center;
+        padding: 20px 5px 20px 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 0 ;
+        background-color: #2C2C2C;
+        color: #c7ac68;
+        font-size: 1.2em;
+    }
+    .quantity-button:hover{
+        
+        background-color: rgb(19, 19, 19);
+        color: #c7ac68;
+        font-size: 1.2em;
+    }
+    .bagslide-quantity{
+        margin-top: 20px;
+    }
+    .quantity-input:focus{
+        outline: none;
+    }
+    .quantity-input input[type=number]::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
+    .bagslide-img{
+        width: 60%;
+    }
+    .bag-divider{
+        border-top: 0.1px solid rgb(255, 255, 255);
+        opacity: 60%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .bagslide-desc{
+        padding-bottom: 5px;
+        color: rgb(149, 149, 149);
+        font-weight:300;
+        font-size: 1em;
+        font-family: 'Poppins', sans-serif;
+    }
+    .remove{
+        margin-top: -100px;
+    }
+    .subtotal{
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+        font-weight:300;
+        font-size: 0.9em;
+        margin-bottom: -20px;
+    }
+    .subtotal-price{
+        color: #c7ac68;
+        font-family: 'Poppins', sans-serif;
+        font-weight:400;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .bag-small-grid-right h3{
+        font-size: 1em;
+    }
+    .quantity-input{
+        width: 30px;
+        padding: 20px 3px 20px 3px;
+        border-radius: 0 ;
+        border: 1px solid #c7ac68;;
+        background-color: rgb(19, 19, 19);
+        color: #c7ac68;
+        font-size: 1em;
+        text-align: center;
+    }
+    .quantity-button{
+        width: 30px;
+        justify-content: center;
+        padding: 20px 5px 20px 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 0 ;
+        background-color: #2C2C2C;
+        color: #c7ac68;
+        font-size: 1em;
+    }
+    .quantity-button:hover{
+        background-color: rgb(19, 19, 19);
+        color: #c7ac68;
+        font-size: 1em;
+    }
+    .bagslide-quantity{
+        margin-top: 20px;
+        transform: scale(0.9);
+        margin-left: -15px;
+        padding-right: 0;
+    }
+    .bag-small-grid-right{
+        margin-left: -40px;
+    }
+    .bagslide-desc{
+        font-size: 0.8em;
+    }
+}

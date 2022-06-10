@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=description content="Minotaur Entertainment" >
+    <meta name=author content="Yanni Kontos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minotaur</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="scripts/navbar.js"></script>
+</head>
+
+<body>
+    <div class="notice">
+        <a href="">Delivering Contactless & Australia Wide</a>
+    </div>
+    <!-- Navigation Bar -->
+    <header id=navbar class="navbar">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidemenu">
+                <a id=menu-head href="catalogue.html">Furniture</a>
+                <a href="catalogue.html">Homeware</a>
+                <a href="catalogue.html">Lighting</a>
+                <a href="catalogue.html">Mirrors</a>
+                <a href="catalogue.html">Wall Decor</a>
+                <a href="catalogue.html">Bags</a>
+                <a href="catalogue.html">Sale</a>
+                <a href="catalogue.html">About</a>
+                <a href="catalogue.html">Contact Us</a>
+                <a href="catalogue.html">Account</a>
+            </div>
+          </div>
+        <div class="logo">
+            <a href="index.html"> <img src="images/logo.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><button onclick="toggleSearch()"><img src="images/ico_menu-search.svg" alt=""></button></li>
+                <li><a href=""><img src="images/ico_menu-account.svg" alt=""></a></li>
+                <li><a href="bag.html"><img src="images/ico_menu-bag.svg"alt=""></a></li>
+                <div class="menuhover">
+                    <span onclick="openNav()">
+                        <ai><a class="menu">MENU<alt=""></a></li>
+                        <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
+                    </span>      
+                </div>         
+                
+            </ul>
+        
+        </nav>
+
+    </header>
+   
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="Search...">
+        <hr class="search-underline">
+
+    </div>
+    <span class="bag-section">
+        
+        <div>
+            <img src="images/icon-drawer.png" alt="">
+            <p class="bag-number">1</p>
+        </div>
+        
+        <span id=bag-footer class="bag-footer">
+            <div onclick="togglebag()" class="bag-panel">
+
+                <a style="text-decoration: none;"><p >bag</p></a>
+            </div>             
+        </span>
+      
+    </span>
+    <div id="bagslide" class="bagslide">
+
+        <h1 style="text-align: center;font-size: 3em;">bag</h1>
+        <hr class="bag-divider">
+
+        <div class="bag-small-grid">
+            <div>
+                <a href="product.html"><img class=bagslide-img src="images/product-photograph-4.png" alt=""></a>
+                <div class="bagslide-quantity"> 
+                    <button class="quantity-button" onclick="dec('amount')">-</button>
+                    <input class="quantity-input" name="amount" type="number" value="1">
+                    <button class="quantity-button" onclick="inc('amount')">+</button> 
+                </div>
+            </div>
+            <div class="bag-small-grid-right">
+            
+                    <h3 class="h3bag" style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3>
+                    <div class="bagslide-desc">
+                        <br>6 Drawer Timber Coffee Table.
+                        <br>Dimensions: 90cm x 70cm x 40cm
+                        <br>Colour: Timber Brown <br><br>
+                    </div>
+                    <a class=remove href="">Remove</a>
+                    <p class="subtotal" style="text-align: right;">Subtotal</p>
+                    <p class="subtotal-price" style="text-align: right; font-size: 1.5em;font-weight: 400;">$459.00</p>
+
+
+            </div>
+
+        </div>
+        <hr class="bag-divider">
+
+        <div class="bag-button">
+            <a href="checkout1.html" class="bag-checkout" style="color: Black; font-weight: 600;">CHECKOUT</a>
+        </div>
+      </div>
+
+    <main>
+       <div class="confirmationwidth"><img class="confirmation-bg" src="images/confirmation-bg.jpg" alt=""></div>
+       <span class="confirmcard">
+            <div class="confirmtext">
+                <h1 style="margin-bottom: -10px; margin-top: 70px;">Thank You!</h1>
+                <h5>Your order is complete. <br>You will be receiving a confirmation email with order details <br> shortly.</h5>
+                <a class="continue-shopping"  href="catalogue.html">Continue Shopping</a>
+                <a style="text-decoration: none;"  href="index.html"><h5>Or Consider Creating an Account?</h5></a>
+
+            </div>
+       </span>
+    </main>
+    <footer>
+        <section class="footer">
+            <hr class="divider-1">
+            <section class="footer1">
+                <div class="newsletter">
+                    <h3>Stay In The Loop</h3>
+                    <div class="signuplayout">
+                        <form>
+                            <img src="images/ico-newsletter.png" alt="">
+                            <input type="newsbox" placeholder="Email address" >
+                        </form>
+                        <span class="signupbtn" style="vertical-align: middle">SIGN UP</span>
+                    </div>
+                    <h4>Get exclusive details on new products and receive special offers </h4>
+                </div>
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href=""><li><img src="images/facebook.svg"  alt=""></li></a>
+                        <a href=""><li><img src="images/instagram.svg"  alt=""></li></a>
+                        <a href=""><li><img src="images/pinterest.svg" alt=""></li></a>
+                        <a href=""><li><img src="images/twitter.svg"  alt=""></li></a>
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider-2">
+            <div class="payfooter">
+                <ul>
+                    <li><img src="images/ico_amex.svg" alt=""></li>
+                    <li><img src="images/ico_mastercard.svg" alt=""></li>
+                    <li><img src="images/ico_visa.svg" alt=""></li>
+                    <li><img src="images/ico_paypal.svg" alt=""></li>
+                    <li><img src="images/ico_zippay_3.svg" alt=""></li>
+                </ul>
+            </div>
+            <h4>© 2022 Black Orpheus Emporium</h4>
+        </section>
+
+    </footer>
+</body>
+</html>

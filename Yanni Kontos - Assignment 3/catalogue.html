@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=description content="Minotaur Entertainment" >
+    <meta name=author content="Yanni Kontos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minotaur</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/catalogue.css">
+    <link rel="stylesheet" href="./styles/bag.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header id=navbar class="navbar">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidemenu">
+                <a id=menu-head href="index.html" style="font-weight: 500">minotaur</a>
+                <a href="catalogue.html">magazines</a>
+                <a href="catalogue.html">music</a>
+                <a href="catalogue.html">board games</a>
+                <a href="catalogue.html">movies</a>
+                <a href="catalogue.html">tv</a>
+                <a href="catalogue.html">manga / anime</a>
+            </div>
+          </div>
+        <nav id="headernav-2" class="headernav-2">
+            <ul>
+                <div class="menuhover">
+                    <span onclick="openNav()">
+                        <ai><a ><img class="menuico" src="icons/bar-menu.png"><alt=""></a></li>
+                    </span>      
+                </div> 
+                <div class="search-2" >
+                    <li><button onclick="toggleSearch()"><img src="icons/search.png" alt=""></button></li>  
+                </div>   
+                <div class="profile-2">
+                    <li><a href=""><img src="icons/profile.png" alt=""></a></li>
+                </div> 
+                <div class="shopping-bag-2">             
+                    <li><a href="bag.html"><img src="icons/shopping-bag.png"alt=""></a></li>
+                </div>      
+            </ul>
+        </nav>
+    </header>
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="" style="justify-content: center";>
+    </div>
+    <span class="bag-section">
+        <div>
+            <img src="images/icon-drawer.png" alt="">
+            <p class="bag-number">1</p>
+        </div>
+        <span id=bag-footer class="bag-footer">
+            <div onclick="togglebag()" class="bag-panel">
+                <a style="text-decoration: none;"><p >bag</p></a>
+            </div>             
+        </span>
+    </span>
+    <div id="bagslide" class="bagslide">
+        <h1 style="text-align: center;font-size: 3em;">bag</h1>
+        <hr class="bag-divider">
+        <div class="bag-small-grid">
+            <div>
+                <a href="product.html"><img class=bagslide-img src="images/product-photograph-4.png" alt=""></a>
+                <div class="bagslide-quantity"> 
+                    <button class="quantity-button" onclick="dec('amount')">-</button>
+                    <input class="quantity-input" name="amount" type="number" value="1">
+                    <button class="quantity-button" onclick="inc('amount')">+</button> 
+                </div>
+            </div>
+        </div>
+        <hr class="bag-divider">
+        <div class="bag-button">
+            <a href="checkout1.html" class="bag-checkout" style="color: Black; font-weight: 600;">CHECKOUT</a>
+        </div>
+      </div>
+    <main>
+        <div id=cattop-bg class="cattop-bg">
+            <h1 class=table-header>Board Games</h1>
+        </div>
+        <div class="logo-minotaur">
+            <h7>
+                <a href="index.html" style="text-decoration:none">minotaur</a>
+            </h7> 
+        </div>
+        <div class="refine">
+            <div class="select-wrapper1">
+                <div class="select">
+                    <div class="select-trigger">
+                          <div class = select-box> 
+                            <span>popular ></span>
+                          </div>
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option" >all products</span>
+                        <span class="custom-option selected" >popular</span>
+                        <span class="custom-option" >abstract</span>
+                        <span class="custom-option" >co-op</span>
+                        <span class="custom-option" >fantasy</span>
+                        <span class="custom-option" >role-playing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-cards">
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="images/Product-ticket-to-ride.png" alt="ticket to ride" style="width:100%"></a></div>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Ticket to Ride</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$50.00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="images/Product-brass-birmingham.png" alt="brass birmingham" style="width:100%"></a></div>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Brass Birmingham</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$90.00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="images/Product-star-wars-rebellion.png" alt="Star Wars Rebellion" style="width:100%"></a></div>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Star Wars Rebellion</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$120.00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </main>
+    <div class="table-ad">
+        <div class="product-table-ad"><img src="images/Table.png" alt="ticket to ride Europe" style="width:100%"></a></div>
+    </div>
+    <div class="product-promo" style="padding-top: 40px; padding-bottom: 40px;">
+        <img src="images/Promo-ticket-to-ride.png" alt="" style="width: 945px; justify-content:end;">
+        <div class = "vertical"></div>
+    </div>
+    <footer>
+        <section class="footer">
+            <a href=index.html style="text-decoration:none">
+              <h4>minotaur</h4>
+            </a>
+        </section>
+    </footer>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/refine.js"></script>
+<script src="scripts/bag.js"></script>
+</body>
+
+</html>

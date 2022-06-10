@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=description content="Minotaur Entertainment" >
+    <meta name=author content="Yanni Kontos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minotaur</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/bag.css">
+    <link rel="shortcut icon" type="image/x-icon" media="all" href="./images/favicon.ico">
+</head>
+
+<body> 
+    <header id=navbar class="navbar">
+        <nav id="headernav" class="headernav">
+            <a id=main-categories href="catalogue.html">magazines</a>
+            <a id=main-categories href="catalogue.html">music</a>
+            <a id=main-categories href="catalogue.html">board games</a>
+            <a id=main-categories href="catalogue.html">movies</a>
+            <a id=main-categories href="catalogue.html">tv</a>
+            <a id=main-categories href="catalogue.html">manga / anime</a>
+        </nav>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidemenu">
+                <a id=menu-head href="index.html">minotaur</a>
+                <a href="catalogue.html">magazines</a>
+                <a href="catalogue.html">music</a>
+                <a href="catalogue.html">board games</a>
+                <a href="catalogue.html">movies</a>
+                <a href="catalogue.html">tv</a>
+                <a href="catalogue.html">manga / anime</a>
+            </div>
+          </div>
+    </header>
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="">
+    </div>
+    <span class="bag-section">
+        <div>
+            <img src="images/icon-drawer.png" alt="">
+            <p class="bag-number">1</p>
+        </div>
+        <span id=bag-footer class="bag-footer">
+            <div onclick="togglebag()" class="bag-panel">
+                <a style="text-decoration: none;"><p >bag</p></a>
+            </div>             
+        </span>
+    </span>
+    <div id="bagslide" class="bagslide">
+        <h1 style="text-align: center;font-size: 3em;">bag</h1>
+        <hr class="bag-divider">
+        <div class="bag-small-grid">
+            <div>
+                <a href="product.html"><img class=bagslide-img src="images/product-photograph-4.png" alt=""></a>
+                <div class="bagslide-quantity"> 
+                    <button class="quantity-button" onclick="dec('amount')">-</button>
+                    <input class="quantity-input" name="amount" type="number" value="1">
+                    <button class="quantity-button" onclick="inc('amount')">+</button> 
+                </div>
+            </div>
+            <div class="bag-small-grid-right">
+            
+                    <h3 class="h3bag" style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3>
+                    <div class="bagslide-desc">
+                        <br>6 Drawer Timber Coffee Table.
+                        <br>Dimensions: 90cm x 70cm x 40cm
+                        <br>Colour: Timber Brown <br><br>
+                    </div>
+                    <a class=remove href="">Remove</a>
+                    <p class="subtotal" style="text-align: right;">Subtotal</p>
+                    <p class="subtotal-price" style="text-align: right; font-size: 1.5em;font-weight: 400;">$459.00</p>
+            </div>
+        </div>
+        <hr class="bag-divider">
+        <div class="bag-button">
+            <a href="checkout1.html" class="bag-checkout" style="color: Black; font-weight: 600;">CHECKOUT</a>
+        </div>
+      </div>
+    <div class="pr-background"></div>
+    <footer>
+        <section class="footer">
+            <h4>minotaur</h4>
+        </section>
+    </footer>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/bag.js"></script>
+</body>
+
+</html>
